@@ -23,7 +23,7 @@ module.exports = React.createClass({
 		);
 
 		// Optional, human languages component.
-		if (this.props.jsonResume.languages) {
+		if (this.props.jsonResume.languages && this.props.jsonResume.languages.length > 0) {
 			components.push(languagesComponent({
 				languages: this.props.jsonResume.languages
 			}));

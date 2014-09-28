@@ -7,31 +7,75 @@ var languagesComponent = require('../../components/Languages');
 
 describe('Languages component test suite', function () {
 
+	var component;
+
 	describe('for an empty languages props', function () {
 
-		var lang,
-			h2,
-			children;
-
 		beforeEach(function () {
-
-			lang = TestUtils.renderIntoDocument(
+			component = TestUtils.renderIntoDocument(
 				languagesComponent()
 			);
+		});
 
-			h2 = TestUtils.findRenderedDOMComponentWithTag(lang, 'h2');
+		it('renders the heading', function () {
+			var h2 = TestUtils.findRenderedDOMComponentWithTag(component, 'h2');
+			expect(h2.getDOMNode().textContent).toEqual('Languages');
+		});
 
-			children = TestUtils.scryRenderedDOMComponentsWithTag(lang, 'div');
+		it('renders NO DL element', function () {
+			var dl = TestUtils.scryRenderedDOMComponentsWithTag(component, 'dl');
+			expect(dl.length).toBe(0);
+		});
 
+	});
+
+	describe('for a list of languages props', function () {
+
+		var languages = [
+			{
+				language: "English",
+				fluency: "Native speaker"
+			},
+			{
+				language: "Indonesian",
+				fluency: "Ignorant tourist"
+			}
+		];
+
+		var h2, dl, dts;
+
+		beforeEach(function () {
+			component = TestUtils.renderIntoDocument(
+				languagesComponent({ languages: languages })
+			);
+			h2 = TestUtils.findRenderedDOMComponentWithTag(component, 'h2');
+			dl = TestUtils.scryRenderedDOMComponentsWithTag(component, 'dl');
+			dts = TestUtils.scryRenderedDOMComponentsWithTag(component, 'dt');
+			dds = TestUtils.scryRenderedDOMComponentsWithTag(component, 'dd');
 		});
 
 		it('renders the heading', function () {
 			expect(h2.getDOMNode().textContent).toEqual('Languages');
 		});
 
-		it('renders nothing else', function () {
-			// 3 divs - container, row, column.
-			expect(children.length).toBe(3);
+		it('renders 1 DL element', function () {
+			expect(dl.length).toBe(1);
+		});
+
+		it('renders 2 dt elements', function () {
+			expect(dts.length).toBe(2);
+		});
+
+		it('renders 2 dd elements', function () {
+			expect(dds.length).toBe(2);
+		});
+
+		it('renders "English" into the first dt', function () {
+			expect(dts[0].getDOMNode().textContent).toEqual('English');
+		});
+
+		it('renders "Ignorant tourist" into the second dd', function () {
+			expect(dds[1].getDOMNode().textContent).toEqual('Ignorant tourist');
 		});
 
 	});
