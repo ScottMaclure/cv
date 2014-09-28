@@ -27,6 +27,16 @@ module.exports = React.createClass({
 
 	render: function () {
 
+		var highlightsComponent;
+		if (this.props.highlights.length > 0) {
+			highlightsComponent = DOM.div({ className: 'workItem__highlights'}, [
+				DOM.div({ className: 'highlights__title' }, 'Highlights'),
+				DOM.ul({ className: 'list-group' }, this.props.highlights.map(function (highlight) {
+					return DOM.li({ className: 'list-group-item', dangerouslySetInnerHTML: { __html: highlight }});
+				}))
+			]);
+		}
+
 		return DOM.div({ className: 'panel panel-default' }, [
 			DOM.div({ className: 'panel-heading' }, [
 				DOM.div({ className: 'row' }, [
@@ -56,7 +66,8 @@ module.exports = React.createClass({
 				),
 				DOM.div({ className: 'workItem__summary'},
 					this.props.summary
-				)
+				),
+				highlightsComponent
 			])
 		]);
 
