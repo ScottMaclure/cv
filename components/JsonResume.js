@@ -4,6 +4,7 @@ var React = require('react'),
 var languagesComponent = require(__dirname + '/Languages');
 var plainTextComponent = require(__dirname + '/PlainText');
 var workComponent = require(__dirname + '/Work');
+var educationItemComponent = require(__dirname + '/EducationItem');
 
 module.exports = React.createClass({
 
@@ -17,7 +18,7 @@ module.exports = React.createClass({
 
 		components.push(DOM.div({ className: 'page-header' },
 			DOM.h1(null, [
-				DOM.div(null, 'Resume of ' + this.props.jsonResume.basics.name),
+				DOM.div(null, this.props.jsonResume.basics.name),
 				DOM.small(null, ' ' + this.props.jsonResume.basics.label)
 			])
 		));
@@ -27,6 +28,25 @@ module.exports = React.createClass({
 		);
 
 		components.push(workComponent({ title: 'Work', work: this.props.jsonResume.work }));
+
+		// Education
+		// TODO Create an Education component and move this in there. Or be generic?
+		components.push(
+			DOM.div({ className: 'educationContainer' }, [
+				DOM.div({ className: 'row' },
+					DOM.div({ className: 'col-xs-12' },
+						DOM.h2(null, 'Education')
+					)
+				),
+				DOM.div({ className: 'row' },
+					DOM.div({ className: 'col-xs-12' },
+						this.props.jsonResume.education.map(function (education) {
+							return educationItemComponent(education);
+						})
+					)
+				)
+			])
+		);
 
 		// Optional, human languages component.
 		if (this.props.jsonResume.languages && this.props.jsonResume.languages.length > 0) {
