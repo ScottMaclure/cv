@@ -10,7 +10,8 @@
     "url": "https://github.com/ScottMaclure/scott-cv.git"
   },
   "devDependencies": {
-    "browserify": "^5.12.1"
+    "browserify": "^5.12.1",
+    "jest-cli": "^0.1.18"
   },
   "dependencies": {
     "express": "^4.9.5",
@@ -20,6 +21,13 @@
     "react": "^0.11.2"
   },
   "scripts": {
-    "start": "node_modules/.bin/nodemon -e js,json server.js"
+    "start": "node_modules/.bin/nodemon -e js,json server.js",
+    "test": "jest"
+  },
+  "jest": {
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react"
+    ],
+    "collectCoverage": true
   }
 }
