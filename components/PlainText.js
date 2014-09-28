@@ -26,9 +26,9 @@ module.exports = React.createClass({
 			),
 
 			DOM.div({ className: 'row plainText__body' },
-				DOM.div({ className: 'col-xs-12' },
-					this.props.body
-				)
+				DOM.div({ className: 'col-xs-12',
+					dangerouslySetInnerHTML: { __html: this.props.body }
+				})
 			)
 
 		]);
