@@ -4,7 +4,7 @@
 		"label": "Web Applications Developer",
 		"email": "scott@maclure.com.au",
 		"website": "http://scott.maclure.com.au/",
-		"summary": "<p>I've loved working with the web since the earliest days of my profession. The open, rapid nature of dev meant the cost of experimenting is low. Meaning risks can be taken. Agile excels here.</p><p> In recent years, I've enjoyed the rise in focus on quality in the frontend toolbox, and multi-device development, which I consider the strength of HTML and associated tech.</p>"
+		"summary": "<p>I've loved working with the web since the earliest days of my profession. The open, rapid nature of dev meant the cost of experimenting is low. Meaning risks can be taken. Agile excels here.</p><p> In recent years, I've enjoyed the rise in focus on quality in the frontend toolbox, and multi-device development, which I consider the strength of HTML and associated tech.</p><p>I enjoy the continuous learning this industry demands, and sharing improved tools and methods with my colleagues.</p>"
 	},
 	"work": [
 		{
@@ -13,15 +13,19 @@
 			"website": "https://www.optus.com.au/",
 			"startDate": "2011",
 			"endDate": "Now",
-			"summary": "Frontend dev with jQuery, FreeMarker, Node.js, SASS and Grunt. Quality oversight role for the FE team. Streamline and improve quality / TDD / CI processes.",
+			"summary": "Frontend dev with jQuery, FreeMarker, Node.js, SASS, Grunt, Backbone, Marionette and AngularJS, among others.",
 			"highlights": [
 				"Member of Technical Lead group, focusing on improving best practice, onboarding and technology adoption.",
 				"Designed FE technical test to give to prospective FE candidates.",
+				"Extensive candidate interview experience for FE roles.",
+				"Mentoring team members in TDD/BDD, design patterns and best practices.",
 				"Worked on Doorstep using Agile / OOP practices. Stack was jQuery, SASS and Play 1.x (groovy templating).",
-				"For optus.com.au site, my main achievement was building up a gruntfile, automating manual tasks and hooking that into Jenkins for CI.",
-				"I've been advocating BDD with Jasmine (and other tools) to the large FE group.",
+				"Introduced FE automation via GruntJS, automating manual tasks and hooking that into Jenkins for CI.",
+				"BDD advocate with Jasmine (and other tools) to the FE group.",
 				"Built the product catalogue admin tool using Backbone, Marionette, Foundation, Jasmine, Grunt and SCSS.",
-				"Extended an internal tool using AngularJS and Grunt."
+				"Code quality metrics with Istanbul and Sonar",
+				"Developed an internal tool using AngularJS and Grunt.",
+				"Participated in multiple Hackathons using various FE tools and tech."
 			]
 		},
 		{
@@ -33,7 +37,7 @@
 			"summary": "Full-stack freelance developer. I work with various small businessess and governments to implement web applications. Main tech is PHP, MySQL, JavaScript, HTML, CSS.",
 			"highlights": [
 				"Built the grants application platform (<a href=\"http://www.arts.nsw.gov.au/\">link</a>) for Arts NSW at minimal cost compared to vendors. Based on Limesurvey, the platform allowed Arts to transition from a printed, PDF-centric application process to an online process, saving time and trees. Applications can be exported to PDF for record-keeping.",
-				"Built the Sourced group website using nodejs, Backbone and SCSS/Compass."
+				"Built the Sourced group website (http://www.sourcedgroup.com.au/) using nodejs, Backbone and SCSS/Compass."
 			]
 		}
 	],
