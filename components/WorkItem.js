@@ -32,7 +32,10 @@ module.exports = React.createClass({
 			highlightsComponent = DOM.div({ className: 'workItem__highlights'}, [
 				DOM.div({ className: 'highlights__title' }, 'Highlights'),
 				DOM.ul({ className: 'list-group' }, this.props.highlights.map(function (highlight) {
-					return DOM.li({ className: 'list-group-item', dangerouslySetInnerHTML: { __html: highlight }});
+					return DOM.li({
+						className: 'list-group-item workItem__highlight',
+						dangerouslySetInnerHTML: { __html: highlight }
+					});
 				}))
 			]);
 		}
