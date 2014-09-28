@@ -1,7 +1,8 @@
 var React = require('react'),
 	DOM = React.DOM;
 
-var languagesComponent = require(__dirname + '/Languages.js');
+var languagesComponent = require(__dirname + '/Languages');
+var plainTextComponent = require(__dirname + '/PlainText');
 
 module.exports = React.createClass({
 
@@ -20,6 +21,10 @@ module.exports = React.createClass({
 					DOM.small(null, ' ' + this.props.jsonResume.basics.label)
 				])
 			)
+		);
+
+		components.push(
+			plainTextComponent({ title: 'About', body: this.props.jsonResume.basics.summary })
 		);
 
 		// Optional, human languages component.
