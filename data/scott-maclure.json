@@ -15,9 +15,13 @@
 			"endDate": "Now",
 			"summary": "Frontend dev with jQuery, FreeMarker, Node.js, SASS and Grunt. Quality oversight role for the FE team. Streamline and improve quality / TDD / CI processes.",
 			"highlights": [
+				"Member of Technical Lead group, focusing on improving best practice, onboarding and technology adoption.",
+				"Designed FE technical test to give to prospective FE candidates.",
 				"Worked on Doorstep using Agile / OOP practices. Stack was jQuery, SASS and Play 1.x (groovy templating).",
-				"For OnePortal, my main achievement was building up a gruntfile, automating manual tasks and hooking that into Jenkins for CI.",
-				"I've been advocating BDD with Jasmine (and other tools) to the large FE group."
+				"For optus.com.au site, my main achievement was building up a gruntfile, automating manual tasks and hooking that into Jenkins for CI.",
+				"I've been advocating BDD with Jasmine (and other tools) to the large FE group.",
+				"Built the product catalogue admin tool using Backbone, Marionette, Foundation, Jasmine, Grunt and SCSS.",
+				"Extended an internal tool using AngularJS and Grunt."
 			]
 		},
 		{
@@ -28,7 +32,8 @@
 			"endDate": "Now",
 			"summary": "Full-stack freelance developer. I work with various small businessess and governments to implement web applications. Main tech is PHP, MySQL, JavaScript, HTML, CSS.",
 			"highlights": [
-				"Built the grants application platform (<a href=\"http://www.arts.nsw.gov.au/\">link</a>) for Arts NSW at minimal cost compared to vendors. Based on Limesurvey, the platform allowed Arts to transition from a printed, PDF-centric application process to an online process, saving time and trees. Applications can be exported to PDF for record-keeping."
+				"Built the grants application platform (<a href=\"http://www.arts.nsw.gov.au/\">link</a>) for Arts NSW at minimal cost compared to vendors. Based on Limesurvey, the platform allowed Arts to transition from a printed, PDF-centric application process to an online process, saving time and trees. Applications can be exported to PDF for record-keeping.",
+				"Built the Sourced group website using nodejs, Backbone and SCSS/Compass."
 			]
 		}
 	],
@@ -36,10 +41,10 @@
 		{
 			"institution": "University of Technology, Sydney",
 			"area": "Science in Computing Science",
-			"studyType": "Bachelor",
+			"studyType": "Bachelor (Hons)",
 			"startDate": "1998",
 			"endDate": "2002",
-			"gpa": "Honors",
+			"gpa": "",
 			"courses": []
 		}
 	],
