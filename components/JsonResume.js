@@ -5,6 +5,7 @@ var languagesComponent = require(__dirname + '/Languages');
 var plainTextComponent = require(__dirname + '/PlainText');
 var workComponent = require(__dirname + '/Work');
 var educationItemComponent = require(__dirname + '/EducationItem');
+var footerComponent = require(__dirname + '/Footer');
 
 module.exports = React.createClass({
 
@@ -57,23 +58,11 @@ module.exports = React.createClass({
 
 		// Footer
 		components.push(
-			DOM.footer(null, [
-				DOM.hr(null, null),
-				DOM.div({ className: 'row' },
-					DOM.div({ className: 'col-xs-12 text-center' },
-						DOM.small({ dangerouslySetInnerHTML: { __html: '&copy;2014 <a href="mailto:' +
-							this.props.jsonResume.basics.email + '">Scott Maclure</a>'
-						}})
-					)
-				),
-				DOM.div({ className: 'row' },
-					DOM.div({ className: 'col-xs-12 text-center' },
-						DOM.small({ dangerouslySetInnerHTML: { __html: '<a href="' +
-							'https://github.com/ScottMaclure/scott-cv/">View sourceode on github</a>.'
-						}})
-					)
-				)
-			])
+			footerComponent({
+				author: this.props.jsonResume.basics.name,
+				email: this.props.jsonResume.basics.email,
+				githubUrl: 'https://github.com/ScottMaclure/scott-cv/'
+			})
 		);
 
 		return DOM.div(
