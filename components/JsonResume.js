@@ -3,6 +3,7 @@ var React = require('react'),
 
 var languagesComponent = require(__dirname + '/Languages');
 var plainTextComponent = require(__dirname + '/PlainText');
+var workComponent = require(__dirname + '/Work');
 
 module.exports = React.createClass({
 
@@ -14,18 +15,18 @@ module.exports = React.createClass({
 
 		var components = [];
 
-		components.push(
-			DOM.div({ className: 'page-header' },
-				DOM.h1(null, [
-					DOM.span(null, 'Resume of ' + this.props.jsonResume.basics.name),
-					DOM.small(null, ' ' + this.props.jsonResume.basics.label)
-				])
-			)
-		);
+		components.push(DOM.div({ className: 'page-header' },
+			DOM.h1(null, [
+				DOM.div(null, 'Resume of ' + this.props.jsonResume.basics.name),
+				DOM.small(null, ' ' + this.props.jsonResume.basics.label)
+			])
+		));
 
 		components.push(
 			plainTextComponent({ title: 'About', body: this.props.jsonResume.basics.summary })
 		);
+
+		components.push(workComponent({ title: 'Work', work: this.props.jsonResume.work }));
 
 		// Optional, human languages component.
 		if (this.props.jsonResume.languages && this.props.jsonResume.languages.length > 0) {
