@@ -40,17 +40,17 @@ module.exports = React.createClass({
 		return DOM.div({ className: 'panel panel-default' }, [
 			DOM.div({ className: 'panel-heading' }, [
 				DOM.div({ className: 'row' }, [
-					DOM.div({ className: 'col-xs-6' },
+					DOM.div({ className: 'col-xs-8' },
 						DOM.div({ className: 'workItem__company'},
 							this.props.company
 						)
 					),
-					DOM.div({ className: 'col-xs-3' },
+					DOM.div({ className: 'col-xs-2' },
 						DOM.div({ className: 'workItem__startDate'},
 							this.props.startDate
 						)
 					),
-					DOM.div({ className: 'col-xs-3' },
+					DOM.div({ className: 'col-xs-2' },
 						DOM.div({ className: 'workItem__endDate'},
 							this.props.endDate
 						)
