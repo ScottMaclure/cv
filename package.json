@@ -1,0 +1,25 @@
+{
+  "name": "scott-cv",
+  "version": "0.0.1",
+  "authors": [
+    "Scott Maclure <scott@maclure.com.au>"
+  ],
+  "description": "Latest CV of Scott Maclure",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ScottMaclure/scott-cv.git"
+  },
+  "devDependencies": {
+    "browserify": "^5.12.1"
+  },
+  "dependencies": {
+    "express": "^4.9.5",
+    "serve-static": "^1.6.3",
+    "errorhandler": "^1.2.0",
+    "nodemon": "^1.2.1",
+    "react": "^0.11.2"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/nodemon -e js,json server.js"
+  }
+}
