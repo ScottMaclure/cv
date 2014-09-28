@@ -1,6 +1,6 @@
 # scott-cv
 
-My personal CV, rendered on server using ReactJS + node.
+My personal CV, using the specification from <https://jsonresume.org/>, rendered on the server using ReactJS + node.
 
 View online: <http://scott-cv.maclure.com.au>
 
@@ -11,4 +11,4 @@ npm install
 npm start
 ```
 
-<http://localhost:7000>
+<http://localhost:7001>
