@@ -18,9 +18,10 @@ module.exports = {
 		// Fixed paths for project. Could make generic, but will end up removing this helper altogether later.
 		var path = __dirname + '/../fragments/' + fragmentName + '.html';
 
-		if (this.cache.path) {
-			return this.cache.path;
-		}
+		// Disabled cache for now.
+		// if (this.cache.path) {
+		// 	return this.cache.path;
+		// }
 
 		this.cache.path = fs.readFileSync(path, 'utf-8');
 
