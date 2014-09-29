@@ -18,12 +18,21 @@ module.exports = React.createClass({
 
 		var components = [];
 
-		components.push(DOM.div({ className: 'page-header' },
-			DOM.h1(null, [
-				DOM.div(null, this.props.jsonResume.basics.name),
-				DOM.small(null, ' ' + this.props.jsonResume.basics.label)
+		components.push(
+			DOM.div({ className: 'page-header' }, [
+				DOM.div({ className: 'row' }, [
+					DOM.div({ className: 'col-xs-12 col-sm-10' },
+						DOM.h1(null, [
+							DOM.div(null, this.props.jsonResume.basics.name),
+							DOM.small(null, ' ' + this.props.jsonResume.basics.label)
+						])
+					),
+					DOM.div({ className: 'col-xs-12 col-sm-2 hidden-xs text-right' },
+						DOM.img({ className: 'gravatar', src: this.props.jsonResume.basics.picture })
+					)
+				])
 			])
-		));
+		);
 
 		components.push(
 			plainTextComponent({ title: 'About', body: this.props.jsonResume.basics.summary })
