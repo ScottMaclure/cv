@@ -6,6 +6,68 @@
 		"website": "http://scott.maclure.com.au/",
 		"summary": "<p>I've loved working with the web since the earliest days of my profession. The open, rapid nature of dev meant the cost of experimenting is low. Meaning risks can be taken. Agile excels here.</p><p> In recent years, I've enjoyed the rise in focus on quality in the frontend toolbox, and multi-device development, which I consider the strength of HTML and associated tech.</p><p>I enjoy the continuous learning this industry demands, and sharing improved tools and methods with my colleagues.</p>"
 	},
+	"skills": [
+		{
+			"name": "Web Development",
+			"level": "Expert",
+			"keywords": [
+				"JavaScript / ECMAScript 5 (jQuery)",
+				"HTML(5), CSS(3)",
+				"SCSS, Compass"
+			]
+		},
+		{
+			"name": "Test Tools",
+			"level": "Accomplished",
+			"keywords": [
+				"Jasmine (and Jest)",
+				"Cucumber",
+				"JUnit"
+			]
+		},
+		{
+			"name": "Soft Skills",
+			"level": "Accomplished",
+			"keywords": [
+				"Interviewer",
+				"Mentor",
+				"Technical Lead"
+			]
+		},
+		{
+			"name": "Continuous Deployment",
+			"level": "Accomplished",
+			"keywords": [
+				"GruntJS",
+				"Jenkins",
+				"Sonar",
+				"Maven",
+				"Ant"
+			]
+		},
+		{
+			"name": "JavaScript Frameworks",
+			"level": "Expert",
+			"keywords": [
+				"BackboneJS, MarionetteJS",
+				"AngularJS",
+				"ReactJS",
+				"BlazeJS",
+				"RactiveJS",
+				"BatmanJS"
+			]
+		},
+		{
+			"name": "Operating Systems",
+			"level": "Accomplished",
+			"keywords": [
+				"Linux (Lubuntu)",
+				"Windows (XP to 8)",
+				"Mac (PowerPC days)",
+				"Solaris"
+			]
+		}
+	],
 	"work": [
 		{
 			"company": "Singtel Optus Pty Ltd",
