@@ -4,7 +4,7 @@
 		"label": "Web Applications Developer",
 		"email": "scott@maclure.com.au",
 		"website": "http://scott.maclure.com.au/",
-		"summary": "<p>I've loved working with the web since the earliest days of my profession. The open, rapid nature of dev meant the cost of experimenting is low. Meaning risks can be taken. Agile excels here.</p><p> In recent years, I've enjoyed the rise in focus on quality in the frontend toolbox, and multi-device development, which I consider the strength of HTML and associated tech.</p><p>I enjoy the continuous learning this industry demands, and sharing improved tools and methods with my colleagues.</p>"
+		"summary": "<p>I've loved working with the web since the earliest days of my profession. The open, rapid nature of development means the cost of experimenting is low. Risks can be taken. Agile excels here (scrum, kanban).</p><p> In recent years, I've enjoyed the rise in focus on quality in the frontend toolbox, and multi-device development, which I consider the strength of HTML and associated technologies.</p><p>I enjoy the continuous challenges and learning this industry demands, and working with my colleagues to make best use of them.</p>"
 	},
 	"skills": [
 		{
@@ -21,6 +21,7 @@
 			"level": "Accomplished",
 			"keywords": [
 				"Jasmine (and Jest)",
+				"Istanbul",
 				"Cucumber",
 				"JUnit"
 			]
@@ -39,6 +40,7 @@
 			"level": "Accomplished",
 			"keywords": [
 				"GruntJS",
+				"gulp (learning)",
 				"Jenkins",
 				"Sonar",
 				"Maven",
@@ -58,10 +60,20 @@
 			]
 		},
 		{
+			"name": "Server-Side Technologies",
+			"level": "Accomplished",
+			"keywords": [
+				"NodeJS (ExpressJS, Action Hero)",
+				"Java (Play 1.x",
+				"PHP4/5 (Shh)",
+				"Clojure (learning)"
+			]
+		},
+		{
 			"name": "Operating Systems",
 			"level": "Accomplished",
 			"keywords": [
-				"Linux (Lubuntu)",
+				"Linux (Lubuntu, CentOS)",
 				"Windows (XP to 8)",
 				"Mac (PowerPC days)",
 				"Solaris"
