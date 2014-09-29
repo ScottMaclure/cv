@@ -65,8 +65,9 @@
 			"level": "Accomplished",
 			"keywords": [
 				"NodeJS (ExpressJS, Action Hero)",
-				"Java (Play 1.x",
+				"Java (Play 1.x)",
 				"PHP4/5 (Shh)",
+				"Ruby (Dashing.io)",
 				"Clojure (learning)"
 			]
 		},
@@ -88,19 +89,21 @@
 			"website": "https://www.optus.com.au/",
 			"startDate": "2011",
 			"endDate": "Now",
-			"summary": "Frontend dev with jQuery, FreeMarker, Node.js, SASS, Grunt, Backbone, Marionette and AngularJS, among others.",
+			"summary": "Frontend developer for optus.com.au, and various internal tools and projects.",
 			"highlights": [
 				"Member of Technical Lead group, focusing on improving best practice, onboarding and technology adoption.",
 				"Designed FE technical test to give to prospective FE candidates.",
 				"Extensive candidate interview experience for FE roles.",
 				"Mentoring team members in TDD/BDD, design patterns and best practices.",
-				"Worked on Doorstep using Agile / OOP practices. Stack was jQuery, SASS and Play 1.x (groovy templating).",
+				"Worked on the 'Doorstep' website using Agile / OOP practices. Stack was jQuery, SASS and Play 1.x (groovy templating).",
 				"Introduced FE automation via GruntJS, automating manual tasks and hooking that into Jenkins for CI.",
 				"BDD advocate with Jasmine (and other tools) to the FE group.",
+				"Worked on creating the 'Living Style Guide' as a generic style guide for optus web projects. Based on Foundation v4.",
 				"Built the product catalogue admin tool using Backbone, Marionette, Foundation, Jasmine, Grunt and SCSS.",
-				"Code quality metrics with Istanbul and Sonar",
-				"Developed an internal tool using AngularJS and Grunt.",
-				"Participated in multiple Hackathons using various FE tools and tech."
+				"Integrated code quality metrics with Istanbul and Sonar into our build process.",
+				"Worked on an internal tool using AngularJS and Grunt.",
+				"Participated in multiple Hackathons using various FE tools and tech.",
+				"Created a 'Quality Dashboard' displaying realtime information from Jenkins and Sonar, using Dashing.io. Used to monitor test coverage, Sonar issues, and test automation results."
 			]
 		},
 		{
@@ -112,7 +115,7 @@
 			"summary": "Full-stack freelance developer. I work with various small businessess and governments to implement web applications. Main tech is PHP, MySQL, JavaScript, HTML, CSS.",
 			"highlights": [
 				"Built the grants application platform (<a href=\"http://www.arts.nsw.gov.au/\">link</a>) for Arts NSW at minimal cost compared to vendors. Based on Limesurvey, the platform allowed Arts to transition from a printed, PDF-centric application process to an online process, saving time and trees. Applications can be exported to PDF for record-keeping.",
-				"Built the Sourced group website (http://www.sourcedgroup.com.au/) using nodejs, Backbone and SCSS/Compass."
+				"Built the Sourced group website using nodejs, Backbone and SCSS/Compass - <a href=\"http://sourcedgroup.com.au/\">sourcedgroup.com.au</a>"
 			]
 		},
 		{
@@ -124,7 +127,7 @@
 			"summary": "Lead a small team in the ongoing development of their publishing platform (PHP, MySQL, jQuery, YUI). Full stack, full lifecycle experience. Multiple client hosting, payment gateway integration, modules, wysiwyg editing/publishing features, etc.",
 			"highlights": [
 				"First exposure to AWS, which would have reduced their monthly bill to 1/5th current webhost (and with better specs).",
-				"Built an online donation system for The Hawkesbury Canoe Classic, which allowed them to increase their donations by a significant multiplier. I believe that around 2011, total donations received through the system over a few years was over 1 million.",
+				"Built an online donation system for <a href=\"http://www.canoeclassic.asn.au/\">The Hawkesbury Canoe Classic</a>, which allowed them to increase their donations by a significant multiplier. I believe that around 2011, total donations received through the system over a few years was over 1 million.",
 				"We designed a new 'race' module for this purpose, allowing entrants to setup a profile page that can accept donations through our payment system."
 			]
 		}
