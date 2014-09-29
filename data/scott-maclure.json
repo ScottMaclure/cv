@@ -114,6 +114,19 @@
 				"Built the grants application platform (<a href=\"http://www.arts.nsw.gov.au/\">link</a>) for Arts NSW at minimal cost compared to vendors. Based on Limesurvey, the platform allowed Arts to transition from a printed, PDF-centric application process to an online process, saving time and trees. Applications can be exported to PDF for record-keeping.",
 				"Built the Sourced group website (http://www.sourcedgroup.com.au/) using nodejs, Backbone and SCSS/Compass."
 			]
+		},
+		{
+			"company": "The Regional Institude / Cirql",
+			"position": "Lead Developer",
+			"website": "http://cirql.com/",
+			"startDate": "2005",
+			"endDate": "2011",
+			"summary": "Lead a small team in the ongoing development of their publishing platform (PHP, MySQL, jQuery, YUI). Full stack, full lifecycle experience. Multiple client hosting, payment gateway integration, modules, wysiwyg editing/publishing features, etc.",
+			"highlights": [
+				"First exposure to AWS, which would have reduced their monthly bill to 1/5th current webhost (and with better specs).",
+				"Built an online donation system for The Hawkesbury Canoe Classic, which allowed them to increase their donations by a significant multiplier. I believe that around 2011, total donations received through the system over a few years was over 1 million.",
+				"We designed a new 'race' module for this purpose, allowing entrants to setup a profile page that can accept donations through our payment system."
+			]
 		}
 	],
 	"education": [
