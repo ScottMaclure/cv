@@ -3,6 +3,7 @@ var React = require('react'),
 
 var languagesComponent = require(__dirname + '/Languages');
 var plainTextComponent = require(__dirname + '/PlainText');
+var skillsComponent = require(__dirname + '/Skills');
 var workComponent = require(__dirname + '/Work');
 var educationItemComponent = require(__dirname + '/EducationItem');
 var footerComponent = require(__dirname + '/Footer');
@@ -27,6 +28,8 @@ module.exports = React.createClass({
 		components.push(
 			plainTextComponent({ title: 'About', body: this.props.jsonResume.basics.summary })
 		);
+
+		components.push(skillsComponent({ title: 'Skills', items: this.props.jsonResume.skills }));
 
 		components.push(workComponent({ title: 'Work', work: this.props.jsonResume.work }));
 
