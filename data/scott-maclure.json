@@ -85,9 +85,24 @@
 	"work": [
 		{
 			"company": "Singtel Optus Pty Ltd",
+			"position": "Application Architect",
+			"website": "https://www.optus.com.au/",
+			"startDate": "2015",
+			"endDate": "Now",
+			"summary": "",
+			"highlights": [
+				"Joined the online architecture team around April 2015, being invited by Martien Verbruggen (previous director) and Steven Bruce to continue work on the lux initiative.",
+				"Co-designer and core developer of lux - the User Experience/Interface (UX/UI) layer intended for all current/future web projects at Optus.",
+				"Responsible for producing and overseeing Impact Assessments - working with the business to produce the best solution for Optus and its customers.",
+				"Solution Designer for the My Account project team - responsible for the overall technical implementation, and its delivery to production."
+			]
+		},
+		{
+			"company": "Singtel Optus Pty Ltd",
 			"position": "Senior Frontend Engineer",
 			"website": "https://www.optus.com.au/",
 			"startDate": "2011",
+			"endDate": "2015",
 			"endDate": "Now",
 			"summary": "Frontend developer for optus.com.au, and various internal tools and projects.",
 			"highlights": [
