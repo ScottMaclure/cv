@@ -7,6 +7,7 @@ var React = require('react');
 var FragmentHelper = require('../libs/FragmentHelper');
 
 var jsonResumeComponent = require('../components/JsonResume');
+var pkg = require('../package.json');
 
 exports.index = function (req, res) {
 
@@ -14,6 +15,7 @@ exports.index = function (req, res) {
 	var jsonResume = JSON.parse(fs.readFileSync(__dirname + '/../data/scott-maclure.json', 'utf-8'));
 
 	var props = {
+		pkg: pkg,
 		jsonResume: jsonResume
 	};
 
