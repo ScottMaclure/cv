@@ -5,35 +5,17 @@
 		"email": "scott@maclure.com.au",
 		"website": "http://scott.maclure.com.au/",
 		"picture": "http://s.gravatar.com/avatar/09e4533fa7324c171453c9d5b301484e?s=100",
-		"summary": "<p>I've loved working with the web since the earliest days of my profession. The open, rapid nature of development means the cost of experimenting is low. Risks can be taken. Agile excels here (scrum, kanban).</p><p> In recent years, I've appreciated the rise in focus on quality in the frontend toolbox, and multi-device development, which I consider the strength of HTML and associated technologies.</p><p>In my current role as Applications Architect, I enjoy the continuous challenges and learning this industry demands, and working with my colleagues to implement customer-focused, pragmatic solutions.</p>"
+		"summary": "<p>I've loved working with the web since the earliest days of my profession. The open, rapid nature of development means the cost of experimenting is low. Risks can be taken. Agile excels here (scrum, kanban).</p><p> In recent years, I've appreciated the rise in focus on quality in the frontend toolbox, and multi-device development, which allows for richer user experiences, and which is the main strength of HTML and associated technologies.</p><p>In my current role as Applications Architect, I'm always excited by the continuous challenges and learning this industry demands, and working with my colleagues to implement customer-focused, pragmatic solutions. There's nothing sweeter than making people's lives easier through technology.</p>"
 	},
 	"skills": [
 		{
-			"name": "Server-Side Technologies",
-			"level": "Accomplished",
-			"keywords": [
-				"NodeJS (ExpressJS, Action Hero)",
-				"Java (Play 1.x)",
-				"PHP4/5 (Shh)",
-				"Ruby (Dashing.io)",
-				"Clojure (learning)"
-			]
-		},
-		{
-			"name": "Servers and Cloud Computing",
-			"level": "Accomplished",
-			"keywords": [
-				"Linux (Debian, CentOS)",
-				"AWS (EC2)"
-			]
-		},
-		{
-			"name": "Web Development",
+			"name": "Web/Native Development",
 			"level": "Expert",
 			"keywords": [
-				"JavaScript / ECMAScript 5 (jQuery)",
+				"JavaScript / ECMAScript 5,6+ (and jQuery)",
 				"HTML(5), CSS(3)",
-				"SCSS, Compass"
+				"SCSS, Compass",
+				"Cordova (hybrid native apps/pocs for Optus and Singtel)"
 			]
 		},
 		{
@@ -43,29 +25,41 @@
 				"Jasmine (and Jest)",
 				"Istanbul",
 				"Cucumber",
+				"Webdriver.io",
 				"JUnit"
+			]
+		},
+		{
+			"name": "Continuous Integration/Delivery",
+			"level": "Accomplished",
+			"keywords": [
+				"GruntJS",
+				"gulp",
+				"Jenkins",
+				"Sonar",
+				"Maven",
+				"Ant",
+				"Conform"
 			]
 		},
 		{
 			"name": "Soft Skills",
 			"level": "Accomplished",
 			"keywords": [
-				"Interviewer",
-				"Mentor",
+				"Applications Architect",
+				"Solution Designer",
 				"Technical Lead",
-				"Stakeholder Management"
+				"Mentor",
+				"Stakeholder Management",
+				"Technical Interviewer"
 			]
 		},
 		{
-			"name": "Continuous Integration",
+			"name": "Servers and Cloud Computing",
 			"level": "Accomplished",
 			"keywords": [
-				"GruntJS",
-				"gulp (learning)",
-				"Jenkins",
-				"Sonar",
-				"Maven",
-				"Ant"
+				"Linux (Debian, CentOS)",
+				"AWS (EC2)"
 			]
 		},
 		{
@@ -79,6 +73,29 @@
 				"RactiveJS",
 				"BatmanJS"
 			]
+		},
+		{
+			"name": "Server-Side Technologies/Patterns",
+			"level": "Accomplished",
+			"keywords": [
+				"NodeJS (ExpressJS, Action Hero)",
+				"Java (Play 1.x)",
+				"PHP4/5 (Shh)",
+				"Ruby (Dashing.io)",
+				"Clojure (learning)",
+				"Bash/Fish scripting",
+				"RESTful web services"
+			]
+		},
+		{
+			"name": "Content Management Systems (CMS)",
+			"level": "Accomplished",
+			"keywords": [
+				"Vignette",
+				"AEM",
+				"Wordpress",
+				"Drupal"
+			]
 		}
 	],
 	"work": [
@@ -90,10 +107,11 @@
 			"endDate": "Now",
 			"summary": "",
 			"highlights": [
-				"Joined the online architecture team around April 2015, being invited by Martien Verbruggen (previous director) and Steven Bruce to continue work on the lux initiative.",
-				"Co-designer and core developer of lux - the User Experience/Interface (UX/UI) layer intended for all current/future web projects at Optus.",
+				"Joined the online architecture team in April 2015, being invited by Martien Verbruggen (previous director) and Steven Bruce to continue work on the LUX initiative.",
+				"Co-designer and core developer of LUX - the UX/UI layer intended for all current/future web projects at Optus.",
 				"Responsible for producing and overseeing Impact Assessments - working with the business to produce the best solution for Optus and its customers.",
-				"Solution Designer for the My Account project team - responsible for the overall technical implementation, and its delivery to production."
+				"Solution Designer for the My Account project team - responsible for the overall technical implementation, and its delivery to production.",
+				"Technical consultant for Singtel Spring project, working with Danny Guan (lead architect for Singtel's Spring project) to assist with technical integration of LUX."
 			]
 		},
 		{
