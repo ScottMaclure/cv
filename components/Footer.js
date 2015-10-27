@@ -4,6 +4,7 @@ var React = require('react'),
 module.exports = React.createClass({
 
 	propTypes: {
+		version: React.PropTypes.string,
 		year: React.PropTypes.number,
 		author: React.PropTypes.string,
 		email: React.PropTypes.string,
@@ -26,13 +27,14 @@ module.exports = React.createClass({
 
 			DOM.div({ className: 'row' }, DOM.div({ className: 'col-xs-12 text-center' }, [
 				DOM.small({ dangerouslySetInnerHTML: { __html: '&copy; ' + this.props.year + ' ' }}),
-				DOM.a({ className: 'footer__author', href: 'mailto:' + this.props.email }, this.props.author)
+				DOM.a({ className: 'footer__author', href: 'mailto:' + this.props.email }, this.props.author),
+				DOM.small(null, ' v' + this.props.version)
 			])),
 
 			DOM.div({ className: 'row' },
 				DOM.div({ className: 'col-xs-12 text-center' },
 					DOM.small(null,
-						DOM.a({ className: 'footer_url', href: this.props.githubUrl }, 'View sourcecode on github')
+						DOM.a({ className: '', href: this.props.githubUrl }, 'View sourcecode on github')
 					)
 				)
 			)

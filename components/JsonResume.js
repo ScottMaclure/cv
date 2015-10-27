@@ -11,6 +11,7 @@ var footerComponent = require(__dirname + '/Footer');
 module.exports = React.createClass({
 
 	propTypes: {
+		pkg: React.PropTypes.object,
 		jsonResume: React.PropTypes.object
 	},
 
@@ -71,6 +72,7 @@ module.exports = React.createClass({
 		// Footer
 		components.push(
 			footerComponent({
+				version: this.props.pkg.version,
 				author: this.props.jsonResume.basics.name,
 				email: this.props.jsonResume.basics.email,
 				githubUrl: 'https://github.com/ScottMaclure/scott-cv/'
