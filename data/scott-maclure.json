@@ -1,13 +1,32 @@
 {
 	"basics": {
 		"name": "Scott Maclure",
-		"label": "Web Applications Developer",
+		"label": "Web Applications Architect",
 		"email": "scott@maclure.com.au",
 		"website": "http://scott.maclure.com.au/",
 		"picture": "http://s.gravatar.com/avatar/09e4533fa7324c171453c9d5b301484e?s=100",
-		"summary": "<p>I've loved working with the web since the earliest days of my profession. The open, rapid nature of development means the cost of experimenting is low. Risks can be taken. Agile excels here (scrum, kanban).</p><p> In recent years, I've appreciated the rise in focus on quality in the frontend toolbox, and multi-device development, which I consider the strength of HTML and associated technologies.</p><p>I enjoy the continuous challenges and learning this industry demands, and working with my colleagues to implement customer-focused solutions.</p>"
+		"summary": "<p>I've loved working with the web since the earliest days of my profession. The open, rapid nature of development means the cost of experimenting is low. Risks can be taken. Agile excels here (scrum, kanban).</p><p> In recent years, I've appreciated the rise in focus on quality in the frontend toolbox, and multi-device development, which I consider the strength of HTML and associated technologies.</p><p>In my current role as Applications Architect, I enjoy the continuous challenges and learning this industry demands, and working with my colleagues to implement customer-focused, pragmatic solutions.</p>"
 	},
 	"skills": [
+		{
+			"name": "Server-Side Technologies",
+			"level": "Accomplished",
+			"keywords": [
+				"NodeJS (ExpressJS, Action Hero)",
+				"Java (Play 1.x)",
+				"PHP4/5 (Shh)",
+				"Ruby (Dashing.io)",
+				"Clojure (learning)"
+			]
+		},
+		{
+			"name": "Servers and Cloud Computing",
+			"level": "Accomplished",
+			"keywords": [
+				"Linux (Debian, CentOS)",
+				"AWS (EC2)"
+			]
+		},
 		{
 			"name": "Web Development",
 			"level": "Expert",
@@ -33,7 +52,8 @@
 			"keywords": [
 				"Interviewer",
 				"Mentor",
-				"Technical Lead"
+				"Technical Lead",
+				"Stakeholder Management"
 			]
 		},
 		{
@@ -58,27 +78,6 @@
 				"BlazeJS",
 				"RactiveJS",
 				"BatmanJS"
-			]
-		},
-		{
-			"name": "Server-Side Technologies",
-			"level": "Accomplished",
-			"keywords": [
-				"NodeJS (ExpressJS, Action Hero)",
-				"Java (Play 1.x)",
-				"PHP4/5 (Shh)",
-				"Ruby (Dashing.io)",
-				"Clojure (learning)"
-			]
-		},
-		{
-			"name": "Operating Systems",
-			"level": "Accomplished",
-			"keywords": [
-				"Linux (Lubuntu, CentOS)",
-				"Windows (XP to 8)",
-				"Mac (PowerPC days)",
-				"Solaris"
 			]
 		}
 	],
