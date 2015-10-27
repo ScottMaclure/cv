@@ -166,6 +166,15 @@
 	],
 	"education": [
 		{
+			"institution": "Software Education Pty Ltd",
+			"area": "Agile Certification",
+			"studyType": "Agile Programming Techniques",
+			"startDate": "2014",
+			"endDate": "2014",
+			"gpa": "",
+			"courses": []
+		},
+		{
 			"institution": "University of Technology, Sydney",
 			"area": "Science in Computing Science",
 			"studyType": "Bachelor (Hons)",
