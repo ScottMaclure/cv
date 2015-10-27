@@ -43,6 +43,11 @@ describe('Footer component test suite', function () {
 			expect(domCom.getDOMNode().href).toEqual('https://github.com/ScottMaclure/scott-cv/');
 		});
 
+		it('renders the CV version', function () {
+			var domCom = TestUtils.scryRenderedDOMComponentsWithClass(component, 'footer_version');
+			expect(domCom.length).toBe(1);
+		});
+
 	});
 
 });
