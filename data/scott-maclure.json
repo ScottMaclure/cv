@@ -166,6 +166,17 @@
 	],
 	"education": [
 		{
+			"institution": "University of California, San Diego & Higher School of Economics on Coursera",
+			"area": "Data Structures and Algorithms",
+			"studyType": "Coursera",
+			"startDate": "2016",
+			"endDate": "2016",
+			"gpa": "",
+			"courses": [
+				"Algorithmic Toolbox (<a href=\"https://www.coursera.org/account/accomplishments/certificate/N3TYCMY9C8AW\">certificate</a>)"
+			]
+		},
+		{
 			"institution": "Software Education Pty Ltd",
 			"area": "Agile Certification",
 			"studyType": "Agile Programming Techniques",
