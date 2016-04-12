@@ -1,7 +1,7 @@
 var React = require('react'),
 	DOM = React.DOM;
 
-var workItemComponent = require(__dirname + '/WorkItem');
+var workItemComponent = React.createFactory(require(__dirname + '/WorkItem'));
 
 module.exports = React.createClass({
 

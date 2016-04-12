@@ -4,8 +4,9 @@
 
 var fs = require('fs');
 var React = require('react');
+var ReactDOMServer = require('react-dom/server');
 var FragmentHelper = require('../libs/FragmentHelper');
-var jsonResumeComponent = require('../components/JsonResume');
+var jsonResumeComponent = React.createFactory(require('../components/JsonResume'));
 
 exports.index = function (req, res) {
 
@@ -20,7 +21,8 @@ exports.index = function (req, res) {
 
 	var component = jsonResumeComponent(props);
 
-	var reactHtml = React.renderComponentToString(component);
+	// https://facebook.github.io/react/docs/top-level-api.html#reactdomserver
+	var reactHtml = ReactDOMServer.renderToStaticMarkup(component);
 
 	res.send(FragmentHelper.renderPage('index', reactHtml));
 

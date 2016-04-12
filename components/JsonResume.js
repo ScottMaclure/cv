@@ -1,12 +1,12 @@
 var React = require('react'),
 	DOM = React.DOM;
 
-var languagesComponent = require(__dirname + '/Languages');
-var plainTextComponent = require(__dirname + '/PlainText');
-var skillsComponent = require(__dirname + '/Skills');
-var workComponent = require(__dirname + '/Work');
-var educationItemComponent = require(__dirname + '/EducationItem');
-var footerComponent = require(__dirname + '/Footer');
+var languagesComponent = React.createFactory(require(__dirname + '/Languages'));
+var plainTextComponent = React.createFactory(require(__dirname + '/PlainText'));
+var skillsComponent = React.createFactory(require(__dirname + '/Skills'));
+var workComponent = React.createFactory(require(__dirname + '/Work'));
+var educationItemComponent = React.createFactory(require(__dirname + '/EducationItem'));
+var footerComponent = React.createFactory(require(__dirname + '/Footer'));
 
 module.exports = React.createClass({
 

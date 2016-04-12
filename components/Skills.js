@@ -1,7 +1,7 @@
 var React = require('react'),
 	DOM = React.DOM;
 
-var itemComponent = require(__dirname + '/SkillsItem');
+var itemComponent = React.createFactory(require(__dirname + '/SkillsItem'));
 
 module.exports = React.createClass({
 
