@@ -104,7 +104,7 @@
 			"position": "Application Architect",
 			"website": "https://www.optus.com.au/",
 			"startDate": "2015",
-			"endDate": "Now",
+			"endDate": "2016",
 			"summary": "",
 			"highlights": [
 				"Joined the online architecture team in April 2015, being invited by Martien Verbruggen (previous director) and Steven Bruce to continue work on the LUX initiative.",
@@ -165,6 +165,17 @@
 		}
 	],
 	"education": [
+		{
+			"institution": "University of California, San Diego & Higher School of Economics",
+			"area": "Data Structures and Algorithms",
+			"studyType": "Coursera Specialization",
+			"startDate": "2016",
+			"endDate": "2016",
+			"gpa": "",
+			"courses": [
+				"Algorithmic Toolbox (<a href=\"https://www.coursera.org/account/accomplishments/certificate/N3TYCMY9C8AW\">certificate</a>)"
+			]
+		},
 		{
 			"institution": "Software Education Pty Ltd",
 			"area": "Agile Certification",

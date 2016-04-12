@@ -2,17 +2,16 @@
 
 My personal CV, using the specification from <https://jsonresume.org/>, rendered on the server using ReactJS + node.
 
-View online: <http://scott-cv.maclure.com.au>
+View online: <http://scott.maclure.com.au>
 
 ## Local installation
 
 ```
-npm prune
-npm install
-npm start
+npm prune && npm install && npm start
 ```
 
 <http://localhost:7001>
+
 
 ## Test suite
 
@@ -36,6 +35,6 @@ Run time: 2.34s
 
 ## Why ReactJS on the server?
 
-I'm exploring client+server rendering these days.
+I'm exploring client+server rendering these days - "universal rendering" I've heard it called.
 
 ReactJS is a lovely way to build modular, testable UIs.

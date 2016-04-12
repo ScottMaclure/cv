@@ -43,7 +43,10 @@ module.exports = React.createClass({
 
 			DOM.div({ className: 'panel-body' }, [
 				DOM.div({ className: 'educationItem__area' }, this.props.area),
-				DOM.div({ className: 'educationItem__studyType' }, this.props.studyType)
+				DOM.div({ className: 'educationItem__studyType' }, this.props.studyType),
+				this.props.courses.map(function (course) {
+					return DOM.div({ className: 'educationItem__course', dangerouslySetInnerHTML: { __html: course}})
+				})
 			])
 
 		]);

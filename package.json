@@ -1,6 +1,7 @@
 {
   "name": "scott-cv",
-  "version": "2.0.2",
+  "version": "2.1.0",
+  "license": "MIT",
   "authors": [
     "Scott Maclure <scott@maclure.com.au>"
   ],
@@ -10,15 +11,16 @@
     "url": "https://github.com/ScottMaclure/scott-cv.git"
   },
   "devDependencies": {
-    "browserify": "^5.12.1",
-    "jest-cli": "^0.1.18"
+    "browserify": "^13.0.0",
+    "jest-cli": "^0.10.2",
+    "react-dom": "^15.0.1"
   },
   "dependencies": {
-    "express": "^4.9.5",
-    "serve-static": "^1.6.3",
-    "errorhandler": "^1.2.0",
-    "nodemon": "^1.2.1",
-    "react": "^0.11.2"
+    "express": "^4.13.4",
+    "serve-static": "^1.10.2",
+    "errorhandler": "^1.4.3",
+    "nodemon": "^1.9.1",
+    "react": "^15.0.1"
   },
   "scripts": {
     "start": "node_modules/.bin/nodemon -e js,json server.js",
