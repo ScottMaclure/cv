@@ -1,6 +1,7 @@
 jest.dontMock('../../components/Languages.js');
 
 var React = require('react');
+var ReactDOM = require('react-dom');
 var TestUtils = require('react-addons-test-utils');
 
 var languagesComponent = React.createFactory(require('../../components/Languages'));
@@ -19,7 +20,7 @@ describe('Languages component test suite', function () {
 
 		it('renders the heading', function () {
 			var h2 = TestUtils.findRenderedDOMComponentWithTag(component, 'h2');
-			expect(h2.getDOMNode().textContent).toEqual('Languages');
+			expect(ReactDOM.findDOMNode(h2).textContent).toEqual('Languages');
 		});
 
 		it('renders NO DL element', function () {
@@ -55,7 +56,7 @@ describe('Languages component test suite', function () {
 		});
 
 		it('renders the heading', function () {
-			expect(h2.getDOMNode().textContent).toEqual('Languages');
+			expect(ReactDOM.findDOMNode(h2).textContent).toEqual('Languages');
 		});
 
 		it('renders 1 DL element', function () {
@@ -71,11 +72,11 @@ describe('Languages component test suite', function () {
 		});
 
 		it('renders "English" into the first dt', function () {
-			expect(dts[0].getDOMNode().textContent).toEqual('English');
+			expect(ReactDOM.findDOMNode(dts[0]).textContent).toEqual('English');
 		});
 
 		it('renders "Ignorant tourist" into the second dd', function () {
-			expect(dds[1].getDOMNode().textContent).toEqual('Ignorant tourist');
+			expect(ReactDOM.findDOMNode(dds[1]).textContent).toEqual('Ignorant tourist');
 		});
 
 	});
