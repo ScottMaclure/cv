@@ -23,7 +23,7 @@
     "react": "^15.0.1"
   },
   "scripts": {
-    "start": "node_modules/.bin/nodemon -e js,json server.js",
+    "start": "node_modules/.bin/nodemon -e js,json,html server.js",
     "test": "jest"
   },
   "jest": {
