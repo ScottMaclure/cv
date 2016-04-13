@@ -33,6 +33,8 @@ Found 5 matching tests...
 Run time: 2.34s
 ```
 
+You can view coverage here: <http://localhost:7001/lcov-report/>
+
 ## Why ReactJS on the server?
 
 I'm exploring client+server rendering these days - "universal rendering" I've heard it called.
