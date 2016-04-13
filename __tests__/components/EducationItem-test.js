@@ -1,9 +1,9 @@
 jest.dontMock('../../components/EducationItem.js');
 
-var React = require('react/addons');
-var TestUtils = React.addons.TestUtils;
+var React = require('react');
+var TestUtils = require('react-addons-test-utils');
 
-var educationItemComponent = require('../../components/EducationItem');
+var educationItemComponent = React.createFactory(require('../../components/EducationItem'));
 
 describe('EducationItem component test suite', function () {
 
