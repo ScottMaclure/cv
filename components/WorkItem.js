@@ -29,10 +29,11 @@ module.exports = React.createClass({
 
 		var highlightsComponent;
 		if (this.props.highlights.length > 0) {
-			highlightsComponent = DOM.div({ className: 'workItem__highlights'}, [
-				DOM.div({ className: 'highlights__title' }, 'Highlights'),
-				DOM.ul({ className: 'list-group' }, this.props.highlights.map(function (highlight) {
+			highlightsComponent = DOM.div({ key: 'workItem__highlights', className: 'workItem__highlights'}, [
+				DOM.div({ key: 'highlights__title', className: 'highlights__title' }, 'Highlights'),
+				DOM.ul({ key: 'list-group', className: 'list-group' }, this.props.highlights.map(function (highlight, index) {
 					return DOM.li({
+						key: 'workItem__highlight__' + index,
 						className: 'list-group-item workItem__highlight',
 						dangerouslySetInnerHTML: { __html: highlight }
 					});
@@ -41,33 +42,33 @@ module.exports = React.createClass({
 		}
 
 		return DOM.div({ className: 'panel panel-default' }, [
-			DOM.div({ className: 'panel-heading' }, [
+			DOM.div({ key: 'panel-heading', className: 'panel-heading' },
 				DOM.div({ className: 'row' }, [
-					DOM.div({ className: 'col-xs-8' },
+					DOM.div({ key: 'workItem__company', className: 'col-xs-8' },
 						DOM.div({ className: 'workItem__company'},
 							this.props.company
 						)
 					),
-					DOM.div({ className: 'col-xs-2' },
+					DOM.div({ key: 'workItem__startDate', className: 'col-xs-2' },
 						DOM.div({ className: 'workItem__startDate'},
 							this.props.startDate
 						)
 					),
-					DOM.div({ className: 'col-xs-2' },
+					DOM.div({ key: 'workItem__endDate', className: 'col-xs-2' },
 						DOM.div({ className: 'workItem__endDate'},
 							this.props.endDate
 						)
 					)
-				]),
-			]),
-			DOM.div({ className: 'panel-body' }, [
-				DOM.div({ className: 'workItem__position'},
+				])
+			),
+			DOM.div({ key: 'panel-body', className: 'panel-body' }, [
+				DOM.div({ key: 'workItem__position', className: 'workItem__position'},
 					this.props.position
 				),
-				DOM.div({ className: 'workItem__website'},
+				DOM.div({ key: 'workItem__website', className: 'workItem__website'},
 					this.props.website
 				),
-				DOM.div({ className: 'workItem__summary'},
+				DOM.div({ key: 'workItem__summary', className: 'workItem__summary'},
 					this.props.summary
 				),
 				highlightsComponent

@@ -13,6 +13,7 @@
   "devDependencies": {
     "browserify": "^13.0.0",
     "jest-cli": "^0.10.2",
+    "react-addons-test-utils": "^15.0.1",
     "react-dom": "^15.0.1"
   },
   "dependencies": {
@@ -24,12 +25,11 @@
   },
   "scripts": {
     "start": "node_modules/.bin/nodemon -e js,json,html server.js",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "jest": {
     "unmockedModulePathPatterns": [
       "<rootDir>/node_modules/react"
-    ],
-    "collectCoverage": true
+    ]
   }
 }

@@ -1,9 +1,9 @@
 jest.dontMock('../../components/WorkItem.js');
 
-var React = require('react/addons');
-var TestUtils = React.addons.TestUtils;
+var React = require('react');
+var TestUtils = require('react-addons-test-utils');
 
-var workItemComponent = require('../../components/WorkItem');
+var workItemComponent = React.createFactory(require('../../components/WorkItem'));
 
 describe('WorkItem component test suite', function () {
 
@@ -64,6 +64,30 @@ describe('WorkItem component test suite', function () {
 		it('renders highlights', function () {
 			var domCom = TestUtils.scryRenderedDOMComponentsWithClass(component, 'workItem__highlight');
 			expect(domCom.length).toBe(3);
+		});
+
+	});
+
+	describe('for no highlights', function () {
+
+		var work = {
+			company: 'Test Company 1',
+			position: 'Test position 1',
+			website: 'https://www.optus.com.au/',
+			startDate: '2011',
+			endDate: 'Present',
+			summary: 'test summary 1'
+		};
+
+		beforeEach(function () {
+			component = TestUtils.renderIntoDocument(
+				workItemComponent(work)
+			);
+		});
+
+		it('renders NO highlights', function () {
+			var domCom = TestUtils.scryRenderedDOMComponentsWithClass(component, 'workItem__highlight');
+			expect(domCom.length).toBe(0);
 		});
 
 	});
