@@ -1,9 +1,9 @@
 jest.dontMock('../../components/Skills.js');
 
-var React = require('react/addons');
-var TestUtils = React.addons.TestUtils;
+var React = require('react');
+var TestUtils = require('react-addons-test-utils');
 
-var skillsComponent = require('../../components/Skills');
+var skillsComponent = React.createFactory(require('../../components/Skills'));
 
 describe('Skills component test suite', function () {
 

@@ -1,9 +1,9 @@
 jest.dontMock('../../components/Footer.js');
 
-var React = require('react/addons');
-var TestUtils = React.addons.TestUtils;
+var React = require('react');
+var TestUtils = require('react-addons-test-utils');
 
-var footerComponent = require('../../components/Footer.js');
+var footerComponent = React.createFactory(require('../../components/Footer.js'));
 
 describe('Footer component test suite', function () {
 

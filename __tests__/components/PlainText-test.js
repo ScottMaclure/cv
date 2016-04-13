@@ -1,9 +1,9 @@
 jest.dontMock('../../components/PlainText.js');
 
-var React = require('react/addons');
-var TestUtils = React.addons.TestUtils;
+var React = require('react');
+var TestUtils = require('react-addons-test-utils');
 
-var plainTextComponent = require('../../components/PlainText');
+var plainTextComponent = React.createFactory(require('../../components/PlainText'));
 
 describe('PlainText component test suite', function () {
 

@@ -1,9 +1,9 @@
 jest.dontMock('../../components/WorkItem.js');
 
-var React = require('react/addons');
-var TestUtils = React.addons.TestUtils;
+var React = require('react');
+var TestUtils = require('react-addons-test-utils');
 
-var workItemComponent = require('../../components/WorkItem');
+var workItemComponent = React.createFactory(require('../../components/WorkItem'));
 
 describe('WorkItem component test suite', function () {
 

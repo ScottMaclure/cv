@@ -1,9 +1,9 @@
 jest.dontMock('../../components/Work.js');
 
-var React = require('react/addons');
-var TestUtils = React.addons.TestUtils;
+var React = require('react');
+var TestUtils = require('react-addons-test-utils');
 
-var workComponent = require('../../components/Work');
+var workComponent = React.createFactory(require('../../components/Work'));
 
 describe('Work component test suite', function () {
 
