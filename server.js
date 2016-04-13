@@ -15,6 +15,7 @@ app.set('port', process.env.PORT || 7001);
 
 // Static file server.
 app.use(serveStatic(path.join(__dirname, 'public')));
+app.use(serveStatic(path.join(__dirname, 'coverage')));
 
 // Required to support JSON-encoded bodies
 //app.use(express.json());
