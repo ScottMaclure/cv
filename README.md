@@ -15,7 +15,16 @@ npm prune && npm install && npm start
 
 ## Test suite
 
-By default, `npm test` will provide a coverage report. Bypass this by directly calling Jest: `./node_modules/.bin/jest`
+```
+# Run this by default. Will output coverage report.
+npm test
+
+# Run test suite without coverage (faster)
+./node_modules/.bin/jest
+
+# Run only recently changed files
+ ./node_modules/.bin/jest -o
+```
 
 You can view coverage here: <http://localhost:7001/lcov-report/>
 
