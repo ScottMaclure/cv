@@ -1,6 +1,7 @@
 jest.dontMock('../../components/Skills.js');
 
 var React = require('react');
+var ReactDOM = require('react-dom');
 var TestUtils = require('react-addons-test-utils');
 
 var skillsComponent = React.createFactory(require('../../components/Skills'));
@@ -67,7 +68,7 @@ describe('Skills component test suite', function () {
 
 		it('renders the heading', function () {
 			var h2 = TestUtils.findRenderedDOMComponentWithTag(component, 'h2');
-			expect(h2.getDOMNode().textContent).toEqual(title);
+			expect(ReactDOM.findDOMNode(h2).textContent).toEqual(title);
 		});
 
 		it('renders 2 "rows" of skills', function () {
