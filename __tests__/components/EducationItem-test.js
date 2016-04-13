@@ -18,7 +18,7 @@ describe('EducationItem component test suite', function () {
 			startDate: '1998',
 			endDate: '2002',
 			gpa: 'Honors',
-			courses: []
+			courses: ['a', 'b', 'c']
 		};
 
 		beforeEach(function () {
@@ -50,6 +50,11 @@ describe('EducationItem component test suite', function () {
 		it('renders endDate', function () {
 			var domCom = TestUtils.findRenderedDOMComponentWithClass(component, 'educationItem__endDate');
 			expect(domCom).toBeDefined();
+		});
+
+		it('renders courses', function () {
+			var domCom = TestUtils.scryRenderedDOMComponentsWithClass(component, 'educationItem__course');
+			expect(domCom.length).toBe(3);
 		});
 
 	});
