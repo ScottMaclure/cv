@@ -9,36 +9,56 @@
 	},
 	"skills": [
 		{
+			"name": "Server Technologies / Frameworks / Patterns",
+			"level": "Accomplished",
+			"keywords": [
+				"NodeJS (ExpressJS, Action Hero)",
+				"Java (Play 1.x)",
+				"PHP4/5 (Laravel, Code Igniter)",
+				"Ruby (Dashing.io)",
+				"Python 3 (for algorithms and data structures course)",
+				"Bash/Fish scripting",
+				"RESTful web services"
+			]
+		},
+		{
+			"name": "Servers, Virtual and Cloud Computing",
+			"level": "Accomplished",
+			"keywords": [
+				"Linux (Debian, CentOS)",
+				"AWS (EC2)",
+				"Vagrant"
+			]
+		},
+		{
 			"name": "Web/Native Development",
 			"level": "Expert",
 			"keywords": [
 				"JavaScript / ECMAScript 5,6+ (and jQuery)",
 				"HTML(5), CSS(3)",
 				"SCSS, Compass",
-				"Cordova (hybrid native apps/pocs for Optus and Singtel)"
+				"Cordova (hybrid apps)"
 			]
 		},
 		{
-			"name": "Test Tools",
-			"level": "Accomplished",
+			"name": "JavaScript Frameworks",
+			"level": "Expert",
 			"keywords": [
-				"Jasmine (and Jest)",
-				"Istanbul",
-				"Cucumber",
-				"Webdriver.io",
-				"JUnit"
+				"BackboneJS, MarionetteJS",
+				"AngularJS",
+				"ReactJS",
+				"BlazeJS",
+				"RactiveJS",
+				"BatmanJS"
 			]
 		},
 		{
 			"name": "Continuous Integration/Delivery",
 			"level": "Accomplished",
 			"keywords": [
-				"GruntJS",
-				"gulp",
-				"Jenkins",
-				"Sonar",
-				"Maven",
-				"Ant",
+				"gulp, GruntJS",
+				"Jenkins, Maven, Sonar, Ant",
+				"Puppet",
 				"Conform"
 			]
 		},
@@ -55,36 +75,14 @@
 			]
 		},
 		{
-			"name": "Servers and Cloud Computing",
+			"name": "Test Tools",
 			"level": "Accomplished",
 			"keywords": [
-				"Linux (Debian, CentOS)",
-				"AWS (EC2)"
-			]
-		},
-		{
-			"name": "JavaScript Frameworks",
-			"level": "Expert",
-			"keywords": [
-				"BackboneJS, MarionetteJS",
-				"AngularJS",
-				"ReactJS",
-				"BlazeJS",
-				"RactiveJS",
-				"BatmanJS"
-			]
-		},
-		{
-			"name": "Server-Side Technologies/Patterns",
-			"level": "Accomplished",
-			"keywords": [
-				"NodeJS (ExpressJS, Action Hero)",
-				"Java (Play 1.x)",
-				"PHP4/5 (Shh)",
-				"Ruby (Dashing.io)",
-				"Clojure (learning)",
-				"Bash/Fish scripting",
-				"RESTful web services"
+				"Jasmine (and Jest)",
+				"Istanbul",
+				"Cucumber",
+				"Webdriver.io",
+				"JUnit"
 			]
 		},
 		{
@@ -107,32 +105,32 @@
 			"endDate": "2016",
 			"summary": "",
 			"highlights": [
-				"Joined the online architecture team in April 2015, being invited by Martien Verbruggen (previous director) and Steven Bruce to continue work on the LUX initiative.",
+				"Joined the online architecture team in April 2015, to lead work on the LUX (Living User Experience) initiative.",
 				"Co-designer and core developer of LUX - the UX/UI layer intended for all current/future web projects at Optus.",
 				"Responsible for producing and overseeing Impact Assessments - working with the business to produce the best solution for Optus and its customers.",
-				"Solution Designer for the My Account project team - responsible for the overall technical implementation, and its delivery to production.",
-				"Technical consultant for Singtel Spring project, working with Danny Guan (lead architect for Singtel's Spring project) to assist with technical integration of LUX."
+				"Solution Designer for the My Account project team - responsible for the overall technical implementation, and its delivery to production, across the online stack.",
+				"Technical consultant for Singtel Spring project, working with lead architect at Singtel to assist with technical integration of LUX."
 			]
 		},
 		{
 			"company": "Singtel Optus Pty Ltd",
-			"position": "Senior Frontend Engineer",
+			"position": "Senior Software Engineer",
 			"website": "https://www.optus.com.au/",
 			"startDate": "2011",
 			"endDate": "2015",
-			"summary": "Frontend developer for optus.com.au, and various internal tools and projects.",
+			"summary": "Software developer for optus.com.au, and various internal tools and projects. Frontend specialization, not exclusively.",
 			"highlights": [
+				"Designed/developed internal deployment/CI/CD/devops tool/API using actionhero, puppet, vagrant, AngularJS, Grunt, and more. Used to spool up environments in AWS, trigger installations on boxes.",
 				"Member of Technical Lead group, focusing on improving best practice, onboarding and technology adoption.",
 				"Designed FE technical test to give to prospective FE candidates.",
-				"Extensive candidate interview experience for FE roles.",
+				"Extensive candidate interview experience for FE and Java developer roles.",
 				"Mentoring team members in TDD/BDD, design patterns and best practices.",
-				"Worked on the 'Doorstep' website using Agile / OOP practices. Stack was jQuery, SASS and Play 1.x (groovy templating).",
+				"Worked on the 'Doorstep' website using Agile / OOP practices. Stack was jQuery, SASS and Play 1.x (groovy templating). Server was deployed to AWS platform via CD process.",
 				"Introduced FE automation via GruntJS, automating manual tasks and hooking that into Jenkins for CI.",
 				"BDD advocate with Jasmine (and other tools) to the FE group.",
 				"Worked on creating the 'Living Style Guide' as a generic style guide for optus web projects. Based on Foundation v4.",
 				"Built the product catalogue admin tool using Backbone, Marionette, Foundation, Jasmine, Grunt and SCSS.",
 				"Integrated code quality metrics with Istanbul and Sonar into our build process.",
-				"Worked on an internal tool using AngularJS and Grunt.",
 				"Participated in multiple Hackathons using various FE tools and tech.",
 				"Created a 'Quality Dashboard' displaying realtime information from Jenkins and Sonar, using Dashing.io. Used to monitor test coverage, Sonar issues, and test automation results."
 			]
