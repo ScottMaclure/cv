@@ -23,15 +23,15 @@ module.exports = React.createClass({
 	render: function () {
 		return DOM.footer(null, [
 
-			DOM.hr(null, null),
+			DOM.hr({ key: 'hr' }, null),
 
-			DOM.div({ className: 'row' }, DOM.div({ className: 'col-xs-12 text-center' }, [
-				DOM.small({ dangerouslySetInnerHTML: { __html: '&copy; ' + this.props.year + ' ' }}),
-				DOM.a({ className: 'footer__author', href: 'mailto:' + this.props.email }, this.props.author),
-				DOM.small({ className: 'footer__version'}, ' v' + this.props.version)
+			DOM.div({ key: 'bodyContainer', className: 'row' }, DOM.div({ className: 'col-xs-12 text-center' }, [
+				DOM.small({ key: 'email', dangerouslySetInnerHTML: { __html: '&copy; ' + this.props.year + ' ' }}),
+				DOM.a({ key: 'author', className: 'footer__author', href: 'mailto:' + this.props.email }, this.props.author),
+				DOM.small({ key: 'version', className: 'footer__version'}, ' v' + this.props.version)
 			])),
 
-			DOM.div({ className: 'row' },
+			DOM.div({ key: 'secondaryContainer', className: 'row' },
 				DOM.div({ className: 'col-xs-12 text-center' },
 					DOM.small(null,
 						DOM.a({ className: 'footer__url', href: this.props.githubUrl }, 'View sourcecode on github')
