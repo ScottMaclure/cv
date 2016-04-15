@@ -19,22 +19,18 @@ module.exports = React.createClass({
 
 	render: function () {
 
-		var components = [];
-
-		this.props.work.forEach(function (work) {
-			components.push(
-				DOM.div({ className: 'row' },
-					DOM.div({ className: 'col-xs-12' },
-						workItemComponent(work)
-					)
+		var components = this.props.work.map(function (work, index) {
+			return DOM.div({ key: 'row' + index, className: 'row' },
+				DOM.div({ className: 'col-xs-12' },
+					workItemComponent(work)
 				)
-			);
+			)
 		});
 
 		return DOM.div({ className: 'work' },
 			[
 				// TODO Consider making this a component of itself. SectionTitle?
-				DOM.div({ className: 'row' },
+				DOM.div({ key: 'titleContainer', className: 'row' },
 					DOM.div({ className: 'col-xs-12' },
 						DOM.h2(null, this.props.title)
 					)
