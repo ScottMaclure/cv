@@ -29,23 +29,23 @@ module.exports = React.createClass({
 
 		return DOM.div({ className: 'panel panel-default' }, [
 
-			DOM.div({ className: 'panel-heading' }, DOM.div({ className: 'row' }, [
-				DOM.div({ className: 'col-xs-8 educationItem__institution' },
+			DOM.div({ key: 'headerContainer', className: 'panel-heading' }, DOM.div({ className: 'row' }, [
+				DOM.div({ key: 'institution', className: 'col-xs-8 educationItem__institution' },
 					this.props.institution
 				),
-				DOM.div({ className: 'col-xs-2 educationItem__startDate' },
+				DOM.div({ key: 'startDate', className: 'col-xs-2 educationItem__startDate' },
 					this.props.startDate
 				),
-				DOM.div({ className: 'col-xs-2 educationItem__endDate' },
+				DOM.div({ key: 'endDate', className: 'col-xs-2 educationItem__endDate' },
 					this.props.endDate
 				)
 			])),
 
-			DOM.div({ className: 'panel-body' }, [
-				DOM.div({ className: 'educationItem__area' }, this.props.area),
-				DOM.div({ className: 'educationItem__studyType' }, this.props.studyType),
-				this.props.courses.map(function (course) {
-					return DOM.div({ className: 'educationItem__course', dangerouslySetInnerHTML: { __html: course}})
+			DOM.div({ key: 'bodyContainer', className: 'panel-body' }, [
+				DOM.div({ key: 'area', className: 'educationItem__area' }, this.props.area),
+				DOM.div({ key: 'studyType', className: 'educationItem__studyType' }, this.props.studyType),
+				this.props.courses.map(function (course, index) {
+					return DOM.div({ key: 'course'+index, className: 'educationItem__course', dangerouslySetInnerHTML: { __html: course}})
 				})
 			])
 

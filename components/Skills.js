@@ -22,23 +22,16 @@ module.exports = React.createClass({
 	 */
 	processRowItems: function (items, rowSize) {
 
-		var components = [];
-
+		// Change items by reference with each splice.
 		var rowItems = items.splice(0, rowSize);
-		var rowComponents = [];
 
-		rowItems.forEach(function (rowItem) {
-			// Thirds, but xs gets 1 column.
-			rowComponents.push(
-				DOM.div({ className: 'col-xs-12 col-sm-4' }, itemComponent(rowItem))
-			);
-		});
-
-		components.push(DOM.div({ className: 'row skills__itemsRow' },
-			rowComponents
-		));
-
-		return components;
+		return DOM.div(
+			{ key: 'itemsRow' + items.length, className: 'row skills__itemsRow' },
+			rowItems.map(function (item, index) {
+				// Thirds, but xs gets 1 column.
+				return DOM.div({ key: 'item'+index, className: 'col-xs-12 col-sm-4' }, itemComponent(item))
+			})
+		)
 
 	},
 
@@ -53,13 +46,13 @@ module.exports = React.createClass({
 		while (items.length > 0) {
 			// Join array onto existing.
 			// items changed by reference.
-			components.push.apply(components, this.processRowItems(items, rowSize));
+			components.push(this.processRowItems(items, rowSize));
 		}
 
 		return DOM.div({ className: 'skills' },
 			[
 				// TODO Consider making this a component of itself. SectionTitle?
-				DOM.div({ className: 'row' },
+				DOM.div({ key: 'title', className: 'row' },
 					DOM.div({ className: 'col-xs-12' },
 						DOM.h2(null, this.props.title)
 					)
