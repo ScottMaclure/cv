@@ -1,5 +1,7 @@
 # scott-cv
 
+[![Build Status](https://travis-ci.org/ScottMaclure/scott-cv.svg?branch=master)](https://travis-ci.org/ScottMaclure/scott-cv)
+
 My personal CV, using the specification from <https://jsonresume.org/>, rendered on the server using ReactJS + node.
 
 View online: <http://scott.maclure.com.au>
