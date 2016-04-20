@@ -17,6 +17,7 @@
 
 		<!-- TODO Move into SCSS. -->
 		<style type="text/css">
+
 			.container-fluid {
 				max-width: 900px;
 			}
@@ -30,6 +31,12 @@
 
 			.gravatar {
 				border-radius: 55px;
+				animation-name: stageRight;
+				animation-duration: 1s;
+				animation-delay: 1s;
+				animation-fill-mode: forwards;
+				position: absolute;
+				right: -35%;
 			}
 
 			.workItem__company {
@@ -44,6 +51,17 @@
 			.highlights__title {
 				font-weight: bold;
 			}
+
+			@keyframes stageRight {
+				from {
+					transform: rotate(0deg)
+				}
+				to {
+					transform: rotate(-360deg);
+					right: 2%;
+				}
+			}
+
 		</style>
 
 	</head>
@@ -52,7 +70,7 @@
 
 		{{reactHtml}}
 
-		<!-- TODO app bundle.js, from browserify. -->
+		<!-- TODO ReactJS components on the client as well. -->
 
 		<!-- Google Tracking -->
 		<script>
