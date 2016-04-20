@@ -22,15 +22,13 @@ module.exports = React.createClass({
 		components.push(
 			DOM.div({ key: 'header', className: 'page-header' },
 				DOM.div({ className: 'row' }, [
-					DOM.div({ key: 'headerText', className: 'col-xs-12 col-sm-10' },
+					DOM.div({ key: 'headerText', className: 'col-xs-10' },
 						DOM.h1(null, [
 							DOM.div({key: 'name'}, this.props.jsonResume.basics.name),
 							DOM.small({key: 'label'}, ' ' + this.props.jsonResume.basics.label)
 						])
 					),
-					DOM.div({ key: 'headerAvatar', className: 'col-xs-12 col-sm-2 hidden-xs text-right' },
-						DOM.img({ className: 'gravatar', src: this.props.jsonResume.basics.picture })
-					)
+					DOM.img({ key: 'headerAvatar', className: 'gravatar', src: this.props.jsonResume.basics.picture })
 				])
 			)
 		);
