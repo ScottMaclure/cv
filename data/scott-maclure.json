@@ -1,9 +1,9 @@
 {
 	"basics": {
 		"name": "Scott Maclure",
-		"label": "Web Applications Architect, Full Stack Developer.",
+		"label": "Web / Cloud Architecture, Applications, Automation, and Infrastructure.",
 		"email": "scott@maclure.com.au",
-		"website": "http://scott.maclure.com.au/",
+		"website": "http://scott.maclure.info/",
 		"picture": "images/profile.jpeg",
 		"summary": "<p>I've loved working with the web since the earliest days of my profession. The open, rapid nature of development means the cost of experimenting is low. Risks can be taken when your architecture allows for fast, continuous deployment. Agile excels in this industry.</p><p> In recent years, I've appreciated the rise in focus on quality in the web stack, and recent advances with multi-device development (including native), which allows  for rich, consistent and fast user experiences.</p><p>As an Application Architect, I'm excited by the continuous challenges and learning required, and by working with my colleagues to implement customer-focused, pragmatic solutions. It's good to make people's lives easier through technology.</p>"
 	},
