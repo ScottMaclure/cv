@@ -27,21 +27,11 @@ module.exports = React.createClass({
 
 	render: function () {
 
-		return DOM.div({ className: 'panel panel-default' }, [
+		return DOM.div({ className: 'card' }, [
 
-			DOM.div({ key: 'headerContainer', className: 'panel-heading' }, DOM.div({ className: 'row' }, [
-				DOM.div({ key: 'institution', className: 'col-xs-8 educationItem__institution' },
-					this.props.institution
-				),
-				DOM.div({ key: 'startDate', className: 'col-xs-2 educationItem__startDate' },
-					this.props.startDate
-				),
-				DOM.div({ key: 'endDate', className: 'col-xs-2 educationItem__endDate' },
-					this.props.endDate
-				)
-			])),
+			DOM.div({ key: 'headerContainer', className: 'card-header' }, [this.props.institution, '(' + this.props.startDate, '-', this.props.endDate + ')'].join(' ')),
 
-			DOM.div({ key: 'bodyContainer', className: 'panel-body' }, [
+			DOM.div({ key: 'bodyContainer', className: 'card-body' }, [
 				DOM.div({ key: 'area', className: 'educationItem__area' }, this.props.area),
 				DOM.div({ key: 'studyType', className: 'educationItem__studyType' }, this.props.studyType),
 				this.props.courses.map(function (course, index) {

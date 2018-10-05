@@ -20,13 +20,13 @@ module.exports = React.createClass({
 		return DOM.div({ className: 'plainText'}, [
 
 			DOM.div({ key: 'title', className: 'row plainText__title' },
-				DOM.div({ className: 'col-xs-12' },
+				DOM.div({ className: 'col' },
 					DOM.h2(null, this.props.title)
 				)
 			),
 
 			DOM.div({ key: 'body', className: 'row plainText__body' },
-				DOM.div({ className: 'col-xs-12', dangerouslySetInnerHTML: { __html: this.props.body }})
+				DOM.div({ className: 'col', dangerouslySetInnerHTML: { __html: this.props.body }})
 			)
 
 		]);

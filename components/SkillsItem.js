@@ -19,15 +19,11 @@ module.exports = React.createClass({
 
 	render: function () {
 
-		return DOM.div({ className: 'panel panel-default' }, [
+		return DOM.div({ className: 'card' }, [
 
-			DOM.div({ key: 'panelHeading', className: 'panel-heading' },
-				DOM.div({ className: 'row' },
-					DOM.div({ className: 'col-xs-12' }, this.props.name)
-				)
-			),
+			DOM.div({ key: 'panelHeading', className: 'card-header'}, this.props.name),
 
-			DOM.div({ key: 'panelBody', className: 'panel-body' },
+			DOM.div({ key: 'panelBody', className: 'card-body' },
 				DOM.ul({ className: 'list-group' },
 					this.props.keywords.map(function (keyword, index) {
 						return DOM.li({ key: 'item' + index, className: 'list-group-item' }, keyword);

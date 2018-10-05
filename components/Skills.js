@@ -26,10 +26,10 @@ module.exports = React.createClass({
 		var rowItems = items.splice(0, rowSize);
 
 		return DOM.div(
-			{ key: 'itemsRow' + items.length, className: 'row skills__itemsRow' },
+			{ key: 'itemsRow' + items.length, className: 'row' },
 			rowItems.map(function (item, index) {
 				// Thirds, but xs gets 1 column.
-				return DOM.div({ key: 'item'+index, className: 'col-xs-12 col-sm-4' }, itemComponent(item))
+				return DOM.div({ key: 'item'+index, className: 'col-sm-4' }, itemComponent(item))
 			})
 		)
 
@@ -53,7 +53,7 @@ module.exports = React.createClass({
 			[
 				// TODO Consider making this a component of itself. SectionTitle?
 				DOM.div({ key: 'title', className: 'row' },
-					DOM.div({ className: 'col-xs-12' },
+					DOM.div({ className: 'col' },
 						DOM.h2(null, this.props.title)
 					)
 				),

@@ -17,12 +17,12 @@ module.exports = React.createClass({
 
 		return DOM.div({ className: 'languagesContainer' }, [
 			DOM.div({ key: 'title', className: 'row' },
-				DOM.div({ className: 'col-xs-12' },
+				DOM.div({ className: 'col' },
 					DOM.h2(null, 'Languages')
 				)
 			),
 			DOM.div({ key: 'body', className: 'row' },
-				DOM.div({ className: 'col-xs-12' },
+				DOM.div({ className: 'col' },
 					this.props.languages.length > 0 ? DOM.dl(null,
 						this.props.languages.map(function (language, index) {
 							return [

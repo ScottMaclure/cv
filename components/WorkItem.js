@@ -41,27 +41,11 @@ module.exports = React.createClass({
 			]);
 		}
 
-		return DOM.div({ className: 'panel panel-default' }, [
-			DOM.div({ key: 'panel-heading', className: 'panel-heading' },
-				DOM.div({ className: 'row' }, [
-					DOM.div({ key: 'workItem__company', className: 'col-xs-8' },
-						DOM.div({ className: 'workItem__company'},
-							this.props.company
-						)
-					),
-					DOM.div({ key: 'workItem__startDate', className: 'col-xs-2' },
-						DOM.div({ className: 'workItem__startDate'},
-							this.props.startDate
-						)
-					),
-					DOM.div({ key: 'workItem__endDate', className: 'col-xs-2' },
-						DOM.div({ className: 'workItem__endDate'},
-							this.props.endDate
-						)
-					)
-				])
-			),
-			DOM.div({ key: 'panel-body', className: 'panel-body' }, [
+		return DOM.div({ className: 'card' }, [
+
+			DOM.div({ key: 'panel-heading', className: 'card-header' }, [this.props.company, '(' + this.props.startDate, '-', this.props.endDate + ')'].join(' ')),
+
+			DOM.div({ key: 'panel-body', className: 'card-body' }, [
 				DOM.div({ key: 'workItem__position', className: 'workItem__position'},
 					this.props.position
 				),
@@ -73,6 +57,7 @@ module.exports = React.createClass({
 				),
 				highlightsComponent
 			])
+
 		]);
 
 	}

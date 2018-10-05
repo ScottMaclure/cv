@@ -22,7 +22,7 @@ module.exports = React.createClass({
 		components.push(
 			DOM.div({ key: 'header', className: 'page-header' },
 				DOM.div({ className: 'row' }, [
-					DOM.div({ key: 'headerText', className: 'col-xs-10' },
+					DOM.div({ key: 'headerText', className: 'col' },
 						DOM.h1(null, [
 							DOM.div({key: 'name'}, this.props.jsonResume.basics.name),
 							DOM.small({key: 'label'}, ' ' + this.props.jsonResume.basics.label)
@@ -46,12 +46,12 @@ module.exports = React.createClass({
 		components.push(
 			DOM.div({ key: 'education', className: 'educationContainer' }, [
 				DOM.div({ key: 'educationTitle', className: 'row' },
-					DOM.div({ className: 'col-xs-12' },
+					DOM.div({ className: 'col' },
 						DOM.h2(null, 'Education')
 					)
 				),
 				DOM.div({ key: 'educationBody', className: 'row' },
-					DOM.div({ className: 'col-xs-12' },
+					DOM.div({ className: 'col' },
 						this.props.jsonResume.education.map(function (education, index) {
 							education.key = 'education' + index;
 							return educationItemComponent(education);

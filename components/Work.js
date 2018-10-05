@@ -21,7 +21,7 @@ module.exports = React.createClass({
 
 		var components = this.props.work.map(function (work, index) {
 			return DOM.div({ key: 'row' + index, className: 'row' },
-				DOM.div({ className: 'col-xs-12' },
+				DOM.div({ className: 'col' },
 					workItemComponent(work)
 				)
 			)
@@ -31,7 +31,7 @@ module.exports = React.createClass({
 			[
 				// TODO Consider making this a component of itself. SectionTitle?
 				DOM.div({ key: 'titleContainer', className: 'row' },
-					DOM.div({ className: 'col-xs-12' },
+					DOM.div({ className: 'col' },
 						DOM.h2(null, this.props.title)
 					)
 				),
