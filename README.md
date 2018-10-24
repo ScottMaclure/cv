@@ -4,7 +4,7 @@
 
 My personal CV, using the specification from <https://jsonresume.org/>, rendered on the server using ReactJS + node.
 
-View online: <http://scott.maclure.com.au>
+View online: <https://scott.maclure.info>
 
 ## Local installation
 
