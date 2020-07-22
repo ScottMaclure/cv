@@ -1,27 +1,30 @@
 {
-  "name": "scott-cv",
+  "name": "cv",
   "version": "4.0.1",
   "license": "MIT",
   "authors": [
-    "Scott Maclure <scott@maclure.com.au>"
+    "Scott Maclure <scott@maclure.info>"
   ],
   "description": "Latest CV of Scott Maclure",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ScottMaclure/scott-cv.git"
+    "url": "https://github.com/ScottMaclure/cv.git"
   },
   "devDependencies": {
-    "browserify": "^13.0.0",
-    "jest-cli": "^0.10.2",
-    "react-addons-test-utils": "^15.0.1",
-    "react-dom": "^15.0.1"
+    "browserify": "*",
+    "jest-cli": "*",
+    "react-addons-test-utils": "*",
+    "react-dom": "*",
+    "react-dom-factories": "*"
   },
   "dependencies": {
-    "express": "^4.13.4",
-    "serve-static": "^1.10.2",
-    "errorhandler": "^1.4.3",
-    "nodemon": "^1.9.1",
-    "react": "^15.0.1"
+    "express": "*",
+    "serve-static": "*",
+    "errorhandler": "*",
+    "nodemon": "*",
+    "react": "*",
+    "prop-types": "*",
+    "create-react-class": "*"
   },
   "scripts": {
     "start": "node_modules/.bin/nodemon -e js,json,html server.js",

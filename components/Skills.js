@@ -1,13 +1,15 @@
 var React = require('react'),
-	DOM = React.DOM;
+	DOM = require('react-dom-factories'),
+	PropTypes = require('prop-types'),
+	createReactClass = require('create-react-class');
 
 var itemComponent = React.createFactory(require(__dirname + '/SkillsItem'));
 
-module.exports = React.createClass({
+module.exports = createReactClass({
 
 	propTypes: {
-		title: React.PropTypes.string,
-		items: React.PropTypes.arrayOf(React.PropTypes.object)
+		title: PropTypes.string,
+		items: PropTypes.arrayOf(PropTypes.object)
 	},
 
 	getDefaultProps: function () {

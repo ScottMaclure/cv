@@ -1,12 +1,14 @@
 var React = require('react'),
-	DOM = React.DOM;
+	DOM = require('react-dom-factories'),
+	PropTypes = require('prop-types'),
+	createReactClass = require('create-react-class');
 
-module.exports = React.createClass({
+module.exports = createReactClass({
 
 	propTypes: {
-		name: React.PropTypes.string,
-		level: React.PropTypes.string,
-		keywords: React.PropTypes.arrayOf(React.PropTypes.string)
+		name: PropTypes.string,
+		level: PropTypes.string,
+		keywords: PropTypes.arrayOf(PropTypes.string)
 	},
 
 	getDefaultProps: function () {

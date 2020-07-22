@@ -1,26 +1,28 @@
 var React = require('react'),
-	DOM = React.DOM;
+	DOM = require('react-dom-factories'),
+	PropTypes = require('prop-types'),
+	createReactClass = require('create-react-class');
 
-module.exports = React.createClass({
+module.exports = createReactClass({
 
 	propTypes: {
-		institution: React.PropTypes.string,
-		area: React.PropTypes.string,
-		studyType: React.PropTypes.string,
-		startDate: React.PropTypes.string,
-		endDate: React.PropTypes.string,
-		gpa: React.PropTypes.string,
-		courses: React.PropTypes.arrayOf(React.PropTypes.string)
+		institution: PropTypes.string,
+		area: PropTypes.string,
+		studyType: PropTypes.string,
+		startDate: PropTypes.string,
+		endDate: PropTypes.string,
+		gpa: PropTypes.string,
+		courses: PropTypes.arrayOf(PropTypes.string)
 	},
 
 	getDefaultProps: function () {
 		return {
-			institution: React.PropTypes.string,
-			area: React.PropTypes.string,
-			studyType: React.PropTypes.string,
-			startDate: React.PropTypes.string,
-			endDate: React.PropTypes.string,
-			gpa: React.PropTypes.string,
+			institution: PropTypes.string,
+			area: PropTypes.string,
+			studyType: PropTypes.string,
+			startDate: PropTypes.string,
+			endDate: PropTypes.string,
+			gpa: PropTypes.string,
 			courses: []
 		};
 	},

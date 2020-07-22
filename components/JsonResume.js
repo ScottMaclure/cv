@@ -1,5 +1,7 @@
 var React = require('react'),
-	DOM = React.DOM;
+	PropTypes = require('prop-types'),
+	createReactClass = require('create-react-class'),
+	DOM = require('react-dom-factories');
 
 var languagesComponent = React.createFactory(require(__dirname + '/Languages'));
 var plainTextComponent = React.createFactory(require(__dirname + '/PlainText'));
@@ -8,11 +10,11 @@ var workComponent = React.createFactory(require(__dirname + '/Work'));
 var educationItemComponent = React.createFactory(require(__dirname + '/EducationItem'));
 var footerComponent = React.createFactory(require(__dirname + '/Footer'));
 
-module.exports = React.createClass({
+module.exports = createReactClass({
 
 	propTypes: {
-		pkg: React.PropTypes.object,
-		jsonResume: React.PropTypes.object
+		pkg: PropTypes.object,
+		jsonResume: PropTypes.object
 	},
 
 	render: function () {
